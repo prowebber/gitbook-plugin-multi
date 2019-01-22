@@ -2,7 +2,13 @@ module.exports = {
     blocks: {
         tag1:{
             process: function (block) {
-                return "Hello "+block.body+", How are you?";
+
+                var html = "<details>";
+                html += "<summary>Test 1</summary>";
+                html += block.body;
+                html += "</details>";
+
+                return html;
             }
         }
     }
