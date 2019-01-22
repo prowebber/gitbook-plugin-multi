@@ -1,11 +1,9 @@
 module.exports = {
-    website: {
-        assets: './assets',
-        js: [
-            'plugin.js'
-        ],
-        css: [
-            'plugin.css'
-        ]
+    blocks: {
+        collapse:{
+            process: function (block) {
+                return "Hello "+block.body+", How are you?";
+            }
+        }
     }
 };
